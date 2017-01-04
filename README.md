@@ -29,3 +29,6 @@ open up mongodb using *mongod*
 -- Models  =  user, post, comment, category
 -- animate posts, ngIf for adding post
 -- dropdown select for categories       (Moss + Wahlin)
+
+*User Model*
+- add bcrypt  (not using passport)
