@@ -1,0 +1,35 @@
+    <div class="col-md-5 col-md-offset-1">
+      <div class="row create-note">
+        <h3>Add New:</h3>
+        <form class="note-form"
+                  (submit)="onCreateNote()">
+           <div class="input-group">
+                <input
+                    type="text"
+                    (focus)="toggle(true)"
+                    [(ngModel)]="post.title"
+                    name="newPostTitle"
+                    placeholder="Title"
+                    class="form-control post-title col-xs-9">
+              <input
+                    type="text"
+                    (focus)="toggle(true)"
+                    [(ngModel)]="post.link"
+                    name="newPostLink"
+                    placeholder="Link"
+                    class="form-control post-link"
+                    *ngIf="fullForm">
+              <input
+                    type="text"
+                    (focus)="toggle(true)"
+                    [(ngModel)]="post.desc"
+                    name="newPostDescription"
+                    placeholder="Description"
+                    class="form-control post-description"
+                    >
+            </div>
+
+                <button type="submit" class="btn btn-primary">Post</button>
+            </form>
+        </div>
+     </div>
