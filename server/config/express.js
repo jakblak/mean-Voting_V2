@@ -62,7 +62,7 @@ module.exports = function(db) {
   app.use('/', express.static(path.resolve('./public')));
 
   // Load the routing files
-  // require('../app/routes/users.server.routes.js')(app);
+  require('./../routes.js')(app);
 
   // Return the Server instance
   return app;

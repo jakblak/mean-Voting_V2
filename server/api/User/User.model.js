@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-const bcrypt = require('bcrypt');
+var crypto = require('crypto');
 
 const UserSchema = new Schema({
   username: {
@@ -25,15 +25,15 @@ UserSchema.pre('save', function(next) {
 UserSchema.methods = {
   // check the passwords on signin
   authenticate: function(plainTextPword) {
-    return bcrypt.compareSync(plainTextPword, this.password);
+    return crypto.compareSync(plainTextPword, this.password);
   },
   // hash the passwords
   encryptPassword: function(plainTextPword) {
     if (!plainTextPword) {
       return ''
     } else {
-      const salt = bcrypt.genSaltSync(10);
-      return bcrypt.hashSync(plainTextPword, salt);
+      const salt = crypto.genSaltSync(10);
+      return crypto.hashSync(plainTextPword, salt);
     }
   },
 
