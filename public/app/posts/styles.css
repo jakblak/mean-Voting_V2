@@ -78,9 +78,18 @@ input {
 .shadow {
   box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
+
 /* MEDIA QUERIES */
 @media(max-width: 768px) {
   .create-note {
     display: none;
+  }
+}
+@media(min-width: 768px) and (max-width: 990px) {
+  .fa-thumbs-up {
+  margin-left: 20px;
+  }
+  .fa-thumbs-down {
+  margin-left: 20px;
   }
 }
