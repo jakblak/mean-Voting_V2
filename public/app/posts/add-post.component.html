@@ -9,14 +9,14 @@
                     type="text"
                     (focus)="toggle(true)"
                     [(ngModel)]="post.title"
-                    name="newPostTitle"
+                    name="title"
                     placeholder="Title"
                     class="form-control post-title col-xs-9">
               <input
                     type="text"
                     (focus)="toggle(true)"
                     [(ngModel)]="post.link"
-                    name="newPostLink"
+                    name="link"
                     placeholder="Link"
                     class="form-control post-link"
                     *ngIf="fullForm">
@@ -24,13 +24,16 @@
                     type="text"
                     (focus)="toggle(true)"
                     [(ngModel)]="post.desc"
-                    name="newPostDescription"
+                    name="description"
                     placeholder="Description"
                     class="form-control post-description"
+                    *ngIf="fullForm"
                     >
             </div>
 
-                <button type="submit" class="btn btn-primary">Post</button>
+                <button type="submit"
+                             class="btn btn-primary"
+                             *ngIf="fullForm">Post</button>
             </form>
         </div>
      </div>

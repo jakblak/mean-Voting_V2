@@ -9,10 +9,16 @@ import { Component } from '@angular/core';
 
 export class AddPostComponent {
 
+  fullForm: boolean = false;
+
   post = {
     link: '',
     desc: '',
     title: ''
+  }
+
+  toggle(value: boolean) {
+    this.fullForm = value;
   }
 
 }

@@ -11,12 +11,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var AddPostComponent = (function () {
     function AddPostComponent() {
+        this.fullForm = false;
         this.post = {
             link: '',
             desc: '',
             title: ''
         };
     }
+    AddPostComponent.prototype.toggle = function (value) {
+        this.fullForm = value;
+    };
     AddPostComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
