@@ -16,7 +16,8 @@ var ListPostsComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'mv-post-list',
-            templateUrl: 'list-posts.component.html'
+            templateUrl: 'list-posts.component.html',
+            styleUrls: ['styles.css']
         }), 
         __metadata('design:paramtypes', [])
     ], ListPostsComponent);

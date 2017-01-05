@@ -16,7 +16,8 @@ var PostsContainerComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'mv-posts-container',
-            templateUrl: 'posts-container.component.html'
+            templateUrl: 'posts-container.component.html',
+            styleUrls: ['styles.css']
         }), 
         __metadata('design:paramtypes', [])
     ], PostsContainerComponent);

@@ -21,7 +21,8 @@ var AddPostComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'mv-add-post',
-            templateUrl: 'add-post.component.html'
+            templateUrl: 'add-post.component.html',
+            styleUrls: ['styles.css']
         }), 
         __metadata('design:paramtypes', [])
     ], AddPostComponent);

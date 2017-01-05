@@ -12,7 +12,9 @@ open up mongodb using *mongod*
 - runs nodemon on port 3000. 
 
 ## Features ##
-- add posts with title, link and description
+- add posts with title, link and description  
+- - only show when title has focus
+- animate posts 
 - upvote & downvote
 - add comments + expand comments
 - log in / sign up
