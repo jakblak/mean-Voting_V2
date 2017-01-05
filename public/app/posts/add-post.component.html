@@ -29,8 +29,14 @@
                     class="form-control post-description"
                     *ngIf="fullForm"
                     >
-            </div>
-
+                   <select class="custom-select"
+                                *ngIf="fullForm">
+                      <option selected>Select Category</option>
+                      <option value="1">Fun</option>
+                      <option value="2">Educational</option>
+                      <option value="3">Free Stuff</option>
+                    </select>
+                </div>
                 <button type="submit"
                              class="btn btn-primary"
                              *ngIf="fullForm">Post</button>

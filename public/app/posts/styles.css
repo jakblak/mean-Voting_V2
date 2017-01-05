@@ -38,6 +38,12 @@ input {
   font-weight: bold;
   margin-top: 5px;
 }
+/*Category Select*/
+.custom-select {
+  font-weight: bold;
+  margin-left: 5px;
+  margin-top: 5px;
+}
 /*Links row*/
 .fa {
   margin-right:5px;

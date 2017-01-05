@@ -26,11 +26,10 @@ open up mongodb using *mongod*
 
 
 ## TO DO
-- if on smaller devices, put 'new post' in menu, remove from side
 - toggle & show comments
 - paginate or Infinite Scroll
 - Auth
 - Models  =  user, post, comment, category
-- animate posts, ngIf for adding post
-- dropdown select for categories       (Moss + Wahlin)
+- animate posts
+- dropdown select for categories (Moss + Wahlin)
 - forms
