@@ -11,7 +11,7 @@ open up mongodb using *mongod*
 
 - runs nodemon on port 3000. 
 
-## Features ##
+## Features
 - add posts with title, link, description, category
 - - only show when title has focus
 - animate posts 
@@ -25,18 +25,12 @@ open up mongodb using *mongod*
 - - valid link
 
 
-**my changes**
-- app.component.html
-
-**TO DO**
--- if on smaller devices, put 'new post' in menu, remove from side
--- toggle & show comments
--- paginate or Infinite Scroll
--- Auth
--- Models  =  user, post, comment, category
--- animate posts, ngIf for adding post
--- dropdown select for categories       (Moss + Wahlin)
+## TO DO
+- if on smaller devices, put 'new post' in menu, remove from side
+- toggle & show comments
+- paginate or Infinite Scroll
+- Auth
+- Models  =  user, post, comment, category
+- animate posts, ngIf for adding post
+- dropdown select for categories       (Moss + Wahlin)
 - forms
-
-*User Model*
-- add bcrypt  (not using passport)
