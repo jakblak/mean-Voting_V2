@@ -2,10 +2,21 @@
   margin-left: 7px;
   margin-top: 7px;
 }
-.btn {
-  margin-top: 5px;
+/* Buttons */
+.btn-primary {
+  margin: 7px;
 }
-
+.btn-primary:hover {
+  background-color: #3C92E8;
+}
+/* Input Field */
+input {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  color: rgba(0,0,0,0.6);
+  margin-bottom: 15px;
+}
 /*Votes*/
 .vote-counter {
   margin-left: 25px;
@@ -30,7 +41,9 @@
 }
 
 /*Links row*/
-.fa { margin-right:5px;}
+.fa {
+  margin-right:5px;
+}
 .section-box h2 {
   margin-top:0px;
 }
@@ -52,6 +65,7 @@
   margin-bottom: 5px;
   border: 0;
   border-top: 1px solid rgb(199, 199, 199);
+  background-color: #efefef;
 }
 .fa-thumbs-down {
   padding-bottom: 10px;
@@ -59,4 +73,9 @@
 }
 .fa-thumbs-up {
  color: #307FFF;
+}
+
+/*Input Box Shadow*/
+.shadow {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 }
