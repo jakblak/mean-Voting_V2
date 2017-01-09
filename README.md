@@ -7,14 +7,14 @@ open up mongodb using *mongod*
 
 `gulp copy:libs`   -   to copy angular into lib folder
 
-`npm start`  
+`npm start`
 
-- runs nodemon on port 3000. 
+- runs nodemon on port 3000.
+
 
 ## Features
 - add posts with title, link, description, category
-- - only show when title has focus
-- animate posts 
+- animate posts
 - upvote & downvote
 - add comments + expand comments
 - log in / sign up
@@ -33,3 +33,10 @@ open up mongodb using *mongod*
 - animate posts
 - dropdown select for categories (Moss + Wahlin)
 - forms
+
+
+## DONE
+- show description, category on focus
+- added shadows to 'add new' box
+- media queries to hide 'add new' box
+- - media queries for thumbs (margin-left)
