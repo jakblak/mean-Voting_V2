@@ -1,47 +1,31 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
-var crypto = require('crypto');
+const crypto = require('crypto');
 
 const UserSchema = new Schema({
   username: {
     type: String,
-    required: true
+    required: 'Username is required',
+    trim: true
   },
-
-  // dont store the password as plain text
+  email: {
+    type: String,
+    // Validate the email format
+    match: [/.+\@.+\..+/, "Please fill a valid email address"]
+  },
   password: {
     type: String,
-    required: true
+    validate: [
+      (password) => password && password.length > 2,
+      'Password should be longer'
+    ]
+  },
+  salt: {
+    type: String
   }
 });
 
-UserSchema.pre('save', function(next) {
-  if (!this.isModified('password')) return next();
 
-  this.password = this.encryptPassword(this.password);
-  next();
-})
-
-UserSchema.methods = {
-  // check the passwords on signin
-  authenticate: function(plainTextPword) {
-    return crypto.compareSync(plainTextPword, this.password);
-  },
-  // hash the passwords
-  encryptPassword: function(plainTextPword) {
-    if (!plainTextPword) {
-      return ''
-    } else {
-      const salt = crypto.genSaltSync(10);
-      return crypto.hashSync(plainTextPword, salt);
-    }
-  },
-
-  toJson: function() {
-    const obj = this.toObject()
-    delete obj.password;
-    return obj;
-  }
 };
 
 module.exports = mongoose.model('User', UserSchema);

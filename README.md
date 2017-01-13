@@ -1,9 +1,9 @@
-## Voting App ##
+# MEAN Voting App
 
-# Running the App
+## Running the App
 `npm install`
 
-open up mongodb using *mongod*
+open up mongodb using `mongod`
 
 `gulp copy:libs`   -   to copy angular into lib folder
 
@@ -18,11 +18,11 @@ open up mongodb using *mongod*
 - upvote & downvote
 - add comments + expand comments
 - log in / sign up
-- SORT
-- - Latest / Hot / Category
-- Auth Stuff
-- - make sure registered to post
-- - valid link
+- **SORT**
+- Latest / Hot / Category
+- **Auth Stuff**
+- make sure registered to post
+- valid link
 
 
 ## TO DO
@@ -35,8 +35,40 @@ open up mongodb using *mongod*
 - forms
 
 
+## UP NEXT
+- controller scaffold
+- hook up to frontend  (users, posts, categories)
+- ngToast
+
+
 ## DONE
 - show description, category on focus
 - added shadows to 'add new' box
-- media queries to hide 'add new' box
-- - media queries for thumbs (margin-left)
+- **Media queries**
+- hide 'add new' box
+- for thumbs (margin-left)
+
+
+### Front Dependencies
+- Bootstrap 4 alpha
+- font-awesome
+- ngToast
+
+### Back Dependencies
+- passport / crytpo
+- mongoose
+- express
+
+### Packaging
+- gulp  (copy over libs)
+- **To Do**
+- minify, concat, deploy  -->  docker, mongoLab, heroku
+
+
+### Flow for Course
+- setup files
+- setup gulp
+- starting server
+- frontend stuff
+- basic components
+- **User**  =  Plain Text  --  refactor into passport
