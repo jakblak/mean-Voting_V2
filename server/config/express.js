@@ -11,6 +11,7 @@ const csrf = require('csurf');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const MongoStore = require('connect-mongo')(session);
+const passport = require('passport');
 
 // Define the Express configuration method
 module.exports = function(db) {
@@ -57,6 +58,10 @@ module.exports = function(db) {
   // Set the application view engine and 'views' folder
   app.set('views', './server/views');
   app.set('view engine', 'ejs');
+
+  // Setup passport
+  app.use(passport.initialize());
+  app.use(passport.session());
 
   // Configure static file serving
   app.use('/', express.static(path.resolve('./public')));

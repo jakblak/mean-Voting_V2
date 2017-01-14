@@ -1,4 +1,7 @@
 # MEAN Voting App
+- **Requirements**
+- Node          4.x
+- MongoDB   3.x
 
 ## Running the App
 `npm install`
@@ -28,7 +31,7 @@ open up mongodb using `mongod`
 ## TO DO
 - toggle & show comments
 - paginate or Infinite Scroll
-- Auth
+- Passport local
 - Models  =  user, post, comment, category
 - animate posts
 - dropdown select for categories (Moss + Wahlin)
@@ -70,5 +73,12 @@ open up mongodb using `mongod`
 - setup gulp
 - starting server
 - frontend stuff
-- basic components
-- **User**  =  Plain Text  --  refactor into passport
+- basic components + views
+- basic Models, Routing
+- Passport
+
+
+### Passport
+- passport.js, add to server.js + express.js
+- passport-local  +  strategies/local.js
+- User model  =  salt, provider + pre(save), authenticate, hash
