@@ -36,6 +36,7 @@ open up mongodb using `mongod`
 - animate posts
 - dropdown select for categories (Moss + Wahlin)
 - forms
+- seed database
 
 
 ## UP NEXT
