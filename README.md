@@ -29,20 +29,20 @@ open up mongodb using `mongod`
 
 
 ## TO DO
-- toggle & show comments
-- paginate or Infinite Scroll
-- Passport local
-- Models  =  user, post, comment, category
-- animate posts
-- dropdown select for categories (Moss + Wahlin)
-- forms
-- seed database
+- [ ] toggle & show comments
+- [ ] paginate or Infinite Scroll
+- [ ] Passport local
+- [ ] Models  =  user, post, comment, category
+- [ ] animate posts
+- [ ] dropdown select for categories (Moss + Wahlin)
+- [ ] forms
+- [ ] seed database
 
 
 ## UP NEXT
-- controller scaffold
-- hook up to frontend  (users, posts, categories)
-- ngToast
+* controller scaffold
+* hook up to frontend  (users, posts, categories)
+* ngToast
 
 
 ## DONE

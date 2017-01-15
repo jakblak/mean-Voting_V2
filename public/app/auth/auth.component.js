@@ -9,26 +9,17 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var NavbarComponent = (function () {
-    function NavbarComponent() {
-        this.appName = "MEAN Voting";
-        this.navItems = [
-            { href: '#', label: 'Home', active: true },
-            { href: '#', label: 'Add New', active: false },
-            { href: '#', label: 'Log In', active: false },
-            { href: '#', label: 'Sign Up', active: false },
-            { href: '#', label: 'Sign Out', active: false }
-        ];
+var AuthComponent = (function () {
+    function AuthComponent() {
     }
-    NavbarComponent = __decorate([
+    AuthComponent = __decorate([
         core_1.Component({
-            moduleId: module.id,
-            selector: 'mv-navbar',
-            templateUrl: 'nav.component.html'
+            selector: 'authentication',
+            templateUrl: 'app/authentication/authentication.template.html',
         }), 
         __metadata('design:paramtypes', [])
-    ], NavbarComponent);
-    return NavbarComponent;
+    ], AuthComponent);
+    return AuthComponent;
 }());
-exports.NavbarComponent = NavbarComponent;
-//# sourceMappingURL=nav.component.js.map
+exports.AuthComponent = AuthComponent;
+//# sourceMappingURL=auth.component.js.map

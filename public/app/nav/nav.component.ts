@@ -13,6 +13,7 @@ export class NavbarComponent {
     {href: '#', label: 'Home', active: true},
     {href: '#', label: 'Add New', active: false},
     {href: '#', label: 'Log In', active: false},
+    {href: '#', label: 'Sign Up', active: false},
     {href: '#', label: 'Sign Out', active: false}
   ];
 }
