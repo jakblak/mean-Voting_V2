@@ -11,25 +11,26 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var auth_service_1 = require('../auth.service');
-var SigninComponent = (function () {
-    function SigninComponent(_authenticationService, _router) {
-        this._authenticationService = _authenticationService;
+var LoginComponent = (function () {
+    function LoginComponent(_authService, _router) {
+        this._authService = _authService;
         this._router = _router;
         this.credentials = {};
     }
-    SigninComponent.prototype.signin = function () {
+    LoginComponent.prototype.login = function () {
         var _this = this;
-        this._authenticationService.signin(this.credentials)
+        this._authService.login(this.credentials)
             .subscribe(function (result) { return _this._router.navigate(['/']); }, function (error) { return _this.errorMessage = error; });
     };
-    SigninComponent = __decorate([
+    LoginComponent = __decorate([
         core_1.Component({
-            selector: 'signin',
-            templateUrl: 'app/authentication/signin/signin.template.html'
+            moduleId: module.id,
+            selector: 'mt-login',
+            templateUrl: 'login.component.html'
         }), 
         __metadata('design:paramtypes', [auth_service_1.AuthService, router_1.Router])
-    ], SigninComponent);
-    return SigninComponent;
+    ], LoginComponent);
+    return LoginComponent;
 }());
-exports.SigninComponent = SigninComponent;
+exports.LoginComponent = LoginComponent;
 //# sourceMappingURL=login.component.js.map

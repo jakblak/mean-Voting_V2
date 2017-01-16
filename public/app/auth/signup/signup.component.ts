@@ -11,11 +11,11 @@ export class SignupComponent {
   errorMessage: string;
   user: any = {};
 
-  constructor (private _authenticationService: AuthService,
-         private _router: Router) { }
+  constructor (private _authService: AuthService,
+                        private _router: Router) { }
 
   signup() {
-    this._authenticationService.signup(this.user)
+    this._authService.signup(this.user)
           .subscribe(
             result  => this._router.navigate(['/']),
             error =>  this.errorMessage = error

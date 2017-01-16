@@ -5,14 +5,14 @@ import {AuthService} from '../auth.service';
 @Component({
   moduleId: module.id,
   selector: 'mt-login',
-  templateUrl: 'login.template.html'
+  templateUrl: 'login.component.html'
 })
 export class LoginComponent {
   errorMessage: string;
   credentials: any = {};
 
   constructor (private _authService: AuthService,
-                      private _router: Router) { }
+                        private _router: Router) { }
 
   login() {
     this._authService.login(this.credentials)

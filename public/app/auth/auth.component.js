@@ -14,8 +14,9 @@ var AuthComponent = (function () {
     }
     AuthComponent = __decorate([
         core_1.Component({
-            selector: 'authentication',
-            templateUrl: 'app/authentication/authentication.template.html',
+            moduleId: module.id,
+            selector: 'mt-auth',
+            templateUrl: 'auth.template.html'
         }), 
         __metadata('design:paramtypes', [])
     ], AuthComponent);

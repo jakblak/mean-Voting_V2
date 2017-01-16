@@ -9,32 +9,54 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var common_1 = require('@angular/common');
-var forms_1 = require('@angular/forms');
+var shared_module_1 = require('../shared/shared.module');
 var router_1 = require('@angular/router');
-var authentication_routes_1 = require('./authentication.routes');
-var authentication_component_1 = require('./authentication.component');
-var signin_component_1 = require('./signin/signin.component');
+var auth_service_1 = require('../auth/auth.service');
+var auth_routes_1 = require('./auth.routes');
+var login_component_1 = require('./login/login.component');
 var signup_component_1 = require('./signup/signup.component');
-var AuthenticationModule = (function () {
-    function AuthenticationModule() {
+var AuthModule = (function () {
+    function AuthModule() {
     }
-    AuthenticationModule = __decorate([
+    AuthModule = __decorate([
         core_1.NgModule({
             imports: [
-                common_1.CommonModule,
-                forms_1.FormsModule,
-                router_1.RouterModule.forChild(authentication_routes_1.AuthenticationRoutes),
+                shared_module_1.SharedModule,
+                router_1.RouterModule.forChild(auth_routes_1.AuthRoutes),
             ],
             declarations: [
-                authentication_component_1.AuthenticationComponent,
-                signin_component_1.SigninComponent,
-                signup_component_1.SignupComponent,
-            ]
+                login_component_1.LoginComponent,
+                signup_component_1.SignupComponent
+            ],
+            providers: [auth_service_1.AuthService]
         }), 
         __metadata('design:paramtypes', [])
-    ], AuthenticationModule);
-    return AuthenticationModule;
+    ], AuthModule);
+    return AuthModule;
 }());
-exports.AuthenticationModule = AuthenticationModule;
-//# sourceMappingURL=authentication.module.js.map
+exports.AuthModule = AuthModule;
+// import { NgModule } from '@angular/core';
+// import { CommonModule } from '@angular/common';
+// import { FormsModule } from '@angular/forms';
+// import { RouterModule } from '@angular/router';
+// import { AuthRoutes } from './auth.routes';
+// import { AuthComponent } from './auth.component';
+// import { LoginComponent } from './login/login.component';
+// import { SignupComponent } from './signup/signup.component';
+// @NgModule({
+//   imports: [
+//     CommonModule,
+//     FormsModule,
+//         RouterModule.forChild([
+//     { path: 'login', component: LoginComponent },
+//     { path: 'signup', component: SignupComponent }
+//     ])
+//   ],
+//   declarations: [
+//     AuthComponent,
+//     LoginComponent,
+//     SignupComponent,
+//   ]
+// })
+// export class AuthModule {}
+//# sourceMappingURL=auth.module.js.map

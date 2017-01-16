@@ -12,20 +12,21 @@ var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
 var auth_service_1 = require('../auth.service');
 var SignupComponent = (function () {
-    function SignupComponent(_authenticationService, _router) {
-        this._authenticationService = _authenticationService;
+    function SignupComponent(_authService, _router) {
+        this._authService = _authService;
         this._router = _router;
         this.user = {};
     }
     SignupComponent.prototype.signup = function () {
         var _this = this;
-        this._authenticationService.signup(this.user)
+        this._authService.signup(this.user)
             .subscribe(function (result) { return _this._router.navigate(['/']); }, function (error) { return _this.errorMessage = error; });
     };
     SignupComponent = __decorate([
         core_1.Component({
-            selector: 'signup',
-            templateUrl: 'app/authentication/signup/signup.template.html'
+            moduleId: module.id,
+            selector: 'mt-signup',
+            templateUrl: 'signup.component.html'
         }), 
         __metadata('design:paramtypes', [auth_service_1.AuthService, router_1.Router])
     ], SignupComponent);

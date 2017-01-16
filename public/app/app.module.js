@@ -11,7 +11,11 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 var core_1 = require('@angular/core');
 var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
+var app_routing_1 = require('./app.routing');
+var http_1 = require('@angular/http');
+/* Feature Modules */
 var posts_module_1 = require('./posts/posts.module');
+var auth_module_1 = require('./auth/auth.module');
 var app_component_1 = require('./app.component');
 var nav_component_1 = require('./nav/nav.component');
 var AppModule = (function () {
@@ -21,9 +25,13 @@ var AppModule = (function () {
         core_1.NgModule({
             imports: [platform_browser_1.BrowserModule,
                 forms_1.FormsModule,
-                posts_module_1.PostsModule],
-            declarations: [app_component_1.AppComponent,
-                nav_component_1.NavbarComponent],
+                http_1.HttpModule,
+                posts_module_1.PostsModule,
+                auth_module_1.AuthModule,
+                app_routing_1.AppRoutingModule
+            ],
+            declarations: [nav_component_1.NavbarComponent,
+                app_component_1.AppComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
