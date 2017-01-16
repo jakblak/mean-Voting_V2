@@ -25,7 +25,6 @@ var LoginComponent = (function () {
     LoginComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'mt-login',
             templateUrl: 'login.component.html'
         }), 
         __metadata('design:paramtypes', [auth_service_1.AuthService, router_1.Router])

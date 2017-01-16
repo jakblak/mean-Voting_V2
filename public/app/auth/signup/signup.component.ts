@@ -4,7 +4,6 @@ import {AuthService} from '../auth.service';
 
 @Component({
   moduleId: module.id,
-  selector: 'mt-signup',
   templateUrl: 'signup.component.html'
 })
 export class SignupComponent {

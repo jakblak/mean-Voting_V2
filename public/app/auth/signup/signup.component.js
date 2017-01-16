@@ -25,7 +25,6 @@ var SignupComponent = (function () {
     SignupComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            selector: 'mt-signup',
             templateUrl: 'signup.component.html'
         }), 
         __metadata('design:paramtypes', [auth_service_1.AuthService, router_1.Router])

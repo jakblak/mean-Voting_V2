@@ -1,10 +1,9 @@
-import {Component} from '@angular/core';
-import {Router} from '@angular/router';
-import {AuthService} from '../auth.service';
+import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { AuthService } from '../auth.service';
 
 @Component({
   moduleId: module.id,
-  selector: 'mt-login',
   templateUrl: 'login.component.html'
 })
 export class LoginComponent {

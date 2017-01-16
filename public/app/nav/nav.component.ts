@@ -9,12 +9,4 @@ import { Router } from '@angular/router';
 
 export class NavbarComponent {
   appName: string = "MEAN Voting";
-
-  navItems: any[] = [
-    { routerLink: '#', label: 'Home', active: true},
-    { routerLink: '#', label: 'Add New', active: false},
-    { routerLink: "['/auth/login']", label: 'Log In', active: false},
-    { routerLink: '#', label: 'Sign Up', active: false},
-    { routerLink: '#', label: 'Sign Out', active: false}
-  ];
 }

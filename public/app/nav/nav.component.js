@@ -12,13 +12,6 @@ var core_1 = require('@angular/core');
 var NavbarComponent = (function () {
     function NavbarComponent() {
         this.appName = "MEAN Voting";
-        this.navItems = [
-            { routerLink: '#', label: 'Home', active: true },
-            { routerLink: '#', label: 'Add New', active: false },
-            { routerLink: "['/auth/login']", label: 'Log In', active: false },
-            { routerLink: '#', label: 'Sign Up', active: false },
-            { routerLink: '#', label: 'Sign Out', active: false }
-        ];
     }
     NavbarComponent = __decorate([
         core_1.Component({
