@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   moduleId: module.id,
   selector: 'mv-posts-container',
-  templateUrl: 'posts-container.component.html',
+  templateUrl: 'posts-container.template.html',
   styleUrls: ['styles.css']
 })
 

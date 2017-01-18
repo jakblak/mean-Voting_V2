@@ -4,7 +4,7 @@ import { Router } from '@angular/router';
 @Component({
   moduleId: module.id,
   selector: 'mv-navbar',
-  templateUrl: 'nav.component.html'
+  templateUrl: 'nav.template.html'
 })
 
 export class NavbarComponent {

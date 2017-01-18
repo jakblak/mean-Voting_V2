@@ -13,32 +13,32 @@
 
    <!-- Polyfill(s) for older browsers -->
     <script src="lib/shim.min.js"></script>
-
     <script src="lib/zone.js"></script>
     <script src="lib/Reflect.js"></script>
     <script src="lib/system.src.js"></script>
-
     <script src="systemjs.config.js"></script>
+
+    <!-- Load System.js -->
     <script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
-
 </head>
+
 <body>
     <mt-app><i class="fa fa-spinner"></i></mt-app>
-<footer>
-    <div class="navbar navbar-fixed-bottom">
-        <div class="navbar-inner footer">
-            <div class="container">
-                    <div class="row">
-                        <div class="col-md-12">
-                            Created by <a href="http://jswiz.net" target="_blank">JsWiz</a>
-                        </div>
+        <footer>
+            <div class="navbar navbar-fixed-bottom">
+                <div class="navbar-inner footer">
+                    <div class="container">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    Created by <a href="http://jswiz.net" target="_blank">JsWiz</a>
+                                </div>
+                            </div>
+                        </footer>
                     </div>
-                </footer>
+                </div>
             </div>
-        </div>
-    </div>
-</footer>
-</body>
+        </footer>
+    </body>
 </html>

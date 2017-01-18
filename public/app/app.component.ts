@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   moduleId: module.id,
   selector: 'mt-app',
-  templateUrl: 'app.component.html'
+  templateUrl: 'app.template.html'
 })
 
-export class AppComponent {
-
-}
+export class AppComponent { }

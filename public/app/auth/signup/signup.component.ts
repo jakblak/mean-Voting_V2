@@ -4,7 +4,7 @@ import {AuthService} from '../auth.service';
 
 @Component({
   moduleId: module.id,
-  templateUrl: 'signup.component.html'
+  templateUrl: 'signup.template.html'
 })
 export class SignupComponent {
   errorMessage: string;
