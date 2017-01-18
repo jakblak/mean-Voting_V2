@@ -1,6 +1,6 @@
 # MEAN Voting App
-- **Requirements**
-- Node          4.x
+### Requirements
+- Node          6.x
 - MongoDB   3.x
 
 ## Running the App
