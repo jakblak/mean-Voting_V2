@@ -10,7 +10,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var router_1 = require('@angular/router');
-var app_component_1 = require('./app.component');
+var home_component_1 = require('./home/home.component');
 var AppRoutingModule = (function () {
     function AppRoutingModule() {
     }
@@ -18,7 +18,7 @@ var AppRoutingModule = (function () {
         core_1.NgModule({
             imports: [
                 router_1.RouterModule.forRoot([
-                    { path: '', component: app_component_1.AppComponent },
+                    { path: '', component: home_component_1.HomeComponent },
                     { path: '**', redirectTo: '', pathMatch: 'full' }
                 ], { preloadingStrategy: router_1.PreloadAllModules }) // ,  {enableTracing: true} )
             ],

@@ -9,27 +9,18 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var core_1 = require('@angular/core');
-var router_1 = require('@angular/router');
-var auth_service_1 = require('../auth.service');
-var LoginComponent = (function () {
-    function LoginComponent(_authService, _router) {
-        this._authService = _authService;
-        this._router = _router;
-        this.credentials = {};
+var HomeComponent = (function () {
+    function HomeComponent() {
     }
-    LoginComponent.prototype.login = function () {
-        var _this = this;
-        this._authService.login(this.credentials)
-            .subscribe(function (result) { return _this._router.navigate(['/']); }, function (error) { return _this.errorMessage = error; });
-    };
-    LoginComponent = __decorate([
+    HomeComponent = __decorate([
         core_1.Component({
             moduleId: module.id,
-            templateUrl: 'login.template.html'
+            selector: 'mt-home',
+            templateUrl: 'home.template.html'
         }), 
-        __metadata('design:paramtypes', [auth_service_1.AuthService, router_1.Router])
-    ], LoginComponent);
-    return LoginComponent;
+        __metadata('design:paramtypes', [])
+    ], HomeComponent);
+    return HomeComponent;
 }());
-exports.LoginComponent = LoginComponent;
-//# sourceMappingURL=login.component.js.map
+exports.HomeComponent = HomeComponent;
+//# sourceMappingURL=home.component.js.map

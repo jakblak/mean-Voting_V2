@@ -1,11 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, PreloadAllModules } from '@angular/router';
-import { AppComponent } from './app.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
     imports: [
         RouterModule.forRoot([
-            { path: '', component: AppComponent },
+            { path: '', component: HomeComponent },
             { path: '**', redirectTo: '', pathMatch: 'full' }
         ] , { preloadingStrategy: PreloadAllModules }) // ,  {enableTracing: true} )
     ],

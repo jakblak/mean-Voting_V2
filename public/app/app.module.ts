@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app.routing';
 import { HttpModule, RequestOptions } from '@angular/http';
-
+import { HomeComponent } from './home/home.component';
 /* Feature Modules */
 import { PostsModule } from './posts/posts.module';
 import { AuthModule } from './auth/auth.module';
@@ -21,7 +21,8 @@ import { NavbarComponent } from './nav/nav.component';
                    AppRoutingModule
                    ],
   declarations: [ NavbarComponent,
-                            AppComponent ],
+                          AppComponent,
+                          HomeComponent ],
   bootstrap:    [ AppComponent ]
 })
 

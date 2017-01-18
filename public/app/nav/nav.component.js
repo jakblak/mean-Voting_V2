@@ -17,7 +17,7 @@ var NavbarComponent = (function () {
         core_1.Component({
             moduleId: module.id,
             selector: 'mv-navbar',
-            templateUrl: 'nav.component.html'
+            templateUrl: 'nav.template.html'
         }), 
         __metadata('design:paramtypes', [])
     ], NavbarComponent);

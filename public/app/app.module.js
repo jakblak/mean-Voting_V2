@@ -13,6 +13,7 @@ var platform_browser_1 = require('@angular/platform-browser');
 var forms_1 = require('@angular/forms');
 var app_routing_1 = require('./app.routing');
 var http_1 = require('@angular/http');
+var home_component_1 = require('./home/home.component');
 /* Feature Modules */
 var posts_module_1 = require('./posts/posts.module');
 var auth_module_1 = require('./auth/auth.module');
@@ -31,7 +32,8 @@ var AppModule = (function () {
                 app_routing_1.AppRoutingModule
             ],
             declarations: [nav_component_1.NavbarComponent,
-                app_component_1.AppComponent],
+                app_component_1.AppComponent,
+                home_component_1.HomeComponent],
             bootstrap: [app_component_1.AppComponent]
         }), 
         __metadata('design:paramtypes', [])
